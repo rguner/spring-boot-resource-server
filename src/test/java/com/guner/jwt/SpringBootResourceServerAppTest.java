@@ -23,7 +23,7 @@ import io.restassured.response.Response;
  * - the Resource Server to be running
  *
  */
-public class JWTResourceServerLiveTest {
+public class SpringBootResourceServerAppTest {
 
     private final String redirectUrl = "http://localhost:8080/";
     private final String authorizeUrlPattern = "http://localhost:8083/auth/realms/baeldung/protocol/openid-connect/auth?response_type=code&client_id=fooClient&scope=%s&redirect_uri=" + redirectUrl;
