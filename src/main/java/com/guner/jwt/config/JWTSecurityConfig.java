@@ -21,8 +21,6 @@ public class JWTSecurityConfig {
                         .requestMatchers("/authorized/**").permitAll()
                         .anyRequest().authenticated())
                 //.csrf(AbstractHttpConfigurer::disable)
-                // .oauth2Login auth server login ekranına yönlendirme yapar, pom da spring-security-oauth2-client tanımı gerektirir
-                .oauth2Login(Customizer.withDefaults())
                 .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults()));
         return http.build();
     }

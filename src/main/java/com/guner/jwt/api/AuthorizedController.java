@@ -21,6 +21,10 @@ import java.util.List;
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 import static org.apache.commons.lang3.RandomStringUtils.randomNumeric;
 
+/**
+ *
+ * Resource Server'da bu controllera gerek yok sadece token almada kolaylık olsun redirect url olması için bıraktım)
+ */
 @RestController
 @RequestMapping(value = "/authorized")
 public class AuthorizedController {
